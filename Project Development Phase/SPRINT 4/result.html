@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Heart Disease Predictor</title>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='diabetes-favicon.ico') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	</head>
+
+    <body>
+
+        <!-- Website Title -->
+		<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Heart Disease Predictor</span></h2>
+    	</div>
+
+		<!-- Result -->
+
+		<div class="info">
+			{%for val1,val2 in input.items()%}
+			<p>{{val1}}:{{val2}}</p>
+			{% endfor %}
+		</div>
+		<div class="results">
+			{% if prediction==1 %}
+				<h1>Prediction: <span class='danger'>Oops! You have Chances of Heart Disease.</span></h1>
+				
+			{% elif prediction==0 %}
+				<h1>Prediction: <span class='safe'>Great! You DON'T chances have Heart Disease.</span></h1>
+				
+			{% endif %}
+		</div>
+             
+
+		
+           
+		<div class="graph">
+			<img src="/static/1.jpeg" alt="" width="600" height="400"/>
+			<img src="/static/2.jpeg" alt="" width="600" height="400"/>
+			<img src="/static/3.jpeg" alt="" width="600" height="400"/>
+			<img src="/static/4.jpeg" alt="" width="600" height="400"/>
+			<img src="/static/5.jpeg" alt="" width="600" height="400"/>
+			<img src="/static/6.jpeg" alt="" width="600" height="400"/>
+			<img src="/static/7.jpeg" alt="" width="600" height="400"/>
+			<img src="/static/8.jpeg" alt="" width="600" height="400"/>
+			</div>
+
+
+		<!-- Footer -->
+       <div class='footer'>
+       </div>
+
+	</body>
+</html>
