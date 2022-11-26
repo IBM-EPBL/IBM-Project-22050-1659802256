@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Heart Disease Predictor</title>
+		<title>dashboard</title>
 		<link rel="shortcut icon" href="{{ url_for('static', filename='diabetes-favicon.ico') }}">
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
@@ -16,7 +16,7 @@
 
         <!-- Website Title -->
 		<div class="container">
-            <h2 class='container-heading'><span class="heading_font">Heart Disease Predictor</span></h2>
+            <h2 class='container-heading'><span class="heading_font">Heart Disease Prediction Dashboard</span></h2>
     	</div>
 
 		<!-- Result -->
@@ -39,19 +39,13 @@
 
 		
            
-		<div class="graph">
-			<img src="/static/1.jpeg" alt="" width="600" height="400"/>
-			<img src="/static/2.jpeg" alt="" width="600" height="400"/>
-			<img src="/static/3.jpeg" alt="" width="600" height="400"/>
-			<img src="/static/4.jpeg" alt="" width="600" height="400"/>
-			<img src="/static/5.jpeg" alt="" width="600" height="400"/>
-			<img src="/static/6.jpeg" alt="" width="600" height="400"/>
-			<img src="/static/7.jpeg" alt="" width="600" height="400"/>
-			<img src="/static/8.jpeg" alt="" width="600" height="400"/>
+			<div class="vis">
+				<a href="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&pathRef=.public_folders%2Fvisualizations%2FDashboard&action=view&mode=dashboard" target="_blank">View Dashboard</a>
 			</div>
-
-
-		<!-- Footer -->
+			<div class="vis">
+				<a href="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&pathRef=.public_folders%2Fvisualizations%2FVisualizations&action=view&mode=dashboard" target="_blank">View Visualization</a>
+			</div>
+		
        <div class='footer'>
        </div>
 
